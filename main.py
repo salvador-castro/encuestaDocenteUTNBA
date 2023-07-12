@@ -38,4 +38,5 @@ time.sleep(10)
 driver.get("https://guarani.frba.utn.edu.ar/autogestion/grado/encuestas_kolla/1a61d5bc78bf0c9311f26e434dc7236f992920fc")
 time.sleep(20)
 
-# Create a function in which it waits for the page https://guarani.frba.utn.edu.ar/autogestion/grado/encuestas_kolla/1a61d5bc78bf0c9311f26e434dc7236f992920fc to finish loading. Once the above is done, look for the radio button with the value id d8829_lk_10502 and click on it. Then use this function to click on all the radio buttons of the page.
+button = driver.find_element(By.ID, 'c8829_pk_1050211')
+button.click()
